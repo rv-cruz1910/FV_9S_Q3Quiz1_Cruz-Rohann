@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            color: white
+        }
+        .container {
+            background-color: #1892f0;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .output {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <center>
+    <h1>if LOL=10 and NOOB=5</h1>
+    <p>COMPUTE USING JAVASCRIPT OPERATORS</p>
+
+    <h3>Arithmetic Operator</h3>
+    <button class="btn btn-info" onclick="var LOL = 10; var NOOB = 5; var result = LOL + NOOB; document.getElementById('asmathicresult1').innerHTML = 'The sum of 10 and 5 is: ' + result">Add Numbers</button>
+    <button class="btn btn-warning" onclick="var LOL = 10; var NOOB = 5; var result = LOL - NOOB; document.getElementById('asmathicresult2').innerHTML = 'The difference between 10 and 5 is: ' + result">Subtract Numbers</button>
+    <p id="asmathicresult1" class="output"></p>
+    <p id="asmathicresult2" class="output"></p>
+
+    <h3>Comparison Operator</h3>
+    <button class="btn btn-info" onclick="var LOL = 10; var NOOB = 5; var result = NOOB > LOL; document.getElementById('COMPresult1').innerHTML = 'Is 5 greater than 10? ' + result">Compare Numbers (5 > 10)</button>
+    <button class="btn btn-warning" onclick="var LOL = 10; var NOOB = 5; var result = NOOB == NOOB; document.getElementById('COMPresult2').innerHTML = 'Is 5 equal to 5? ' + result">Compare Numbers (5 == 5)</button>
+    <p id="COMPresult1" class="output"></p>
+    <p id="COMPresult2" class="output"></p>
+
+    <h3>Logical Operator</h3>
+    <button class="btn btn-info" onclick="var LOL = 10; var NOOB = 5; var result = (LOL > 3) && (NOOB < 15); document.getElementById('LGresult1').innerHTML = '(5 > 3) AND (10 < 15) : ' + result">Logical AND </button>
+    <button class="btn btn-warning" onclick="var LOL = 10; var NOOB = 5; var result = (LOL < 3) || (NOOB > 5); document.getElementById('LGresult2').innerHTML = '(5 < 3) OR (10 > 5) : ' + result">Logical OR </button>
+    <p id="LGresult1" class="output"></p>
+    <p id="LGresult2" class="output"></p>
+</center>
+</div>
+</body>
+</html>
+
+
+
